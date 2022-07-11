@@ -12,9 +12,8 @@ alias סעמק='semek'
 alias קמעס='semek'
 export SEMEK_PATH='PATH/TO/Semek'
 semek() {
-    COMMAND=$(python $SEMEK_PATH/semek.py $(fc -ln -1))
-    echo $COMMAND
-    $COMMAND
+    python $SEMEK_PATH/semek.py $(fc -ln -1)
+    $(python $SEMEK_PATH/semek.py $(fc -ln -1))
 }
 ```
 
